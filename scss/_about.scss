@@ -1,0 +1,73 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image { //to be used as a background image for the about section
+    height: 50vh;
+    width: 100%;
+    background: 
+      linear-gradient(
+        to right,
+        rgba($primary-color, 0.6),
+        rgba($primary-color, 0.2)
+      ),
+      url('../img/model-1.jpg')center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    }
+  }
+
+  &__bio {
+    width: 80%;
+    text-align: center;
+
+    .text-secondary {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .jobs {
+    width: 60vh;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &__job { //to be used as a card for each job experience
+      background: lighten($primary-color, 10%);
+      padding: 0.5rem;
+      border-bottom: 2px solid $secondary-color;
+      
+      h2,h3 {
+        margin: 0.5rem 0;
+      }
+      h6 {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .social-icons { //To mention social media icons in the about section.
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  footer {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+}
